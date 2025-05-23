@@ -1,0 +1,184 @@
+{
+  "restaurants": [
+    {
+      "restaurant_id": 1,
+      "name": "KeepItFresh Grill",
+      "address": "123 Fresh Ave."
+    }
+  ],
+  "inventories": [
+    {
+      "inventory_id": 1,
+      "restaurant_id": 1,
+      "name": "Main Inventory"
+    }
+  ],
+  "products": [
+    {
+      "product_id": 1,
+      "inventory_id": 1,
+      "name": "Cherries",
+      "expiration_date": "2025-06-11T00:00:00Z",
+      "stock": 13,
+      "measurement_unit": "kg",
+      "price": 10.5
+    },
+    {
+      "product_id": 2,
+      "inventory_id": 1,
+      "name": "Tomato",
+      "expiration_date": "2025-05-23T00:00:00Z",
+      "stock": 20,
+      "measurement_unit": "kg",
+      "price": 2.0
+    },
+    {
+      "product_id": 3,
+      "inventory_id": 1,
+      "name": "Bananas",
+      "expiration_date": "2025-05-23T00:00:00Z",
+      "stock": 10,
+      "measurement_unit": "kg",
+      "price": 3.0
+    },
+    {
+      "product_id": 4,
+      "inventory_id": 1,
+      "name": "Lettuce",
+      "expiration_date": "2025-05-29T00:00:00Z",
+      "stock": 15,
+      "measurement_unit": "unit",
+      "price": 1.5
+    },
+    {
+      "product_id": 5,
+      "inventory_id": 1,
+      "name": "Potato",
+      "expiration_date": "2025-10-23T00:00:00Z",
+      "stock": 10,
+      "measurement_unit": "kg",
+      "price": 2.5
+    }
+  ],
+  "dishes": [
+    { "dish_id": 1, "name": "Pizza Margherita", "price": 25 },
+    { "dish_id": 2, "name": "Spaghetti Carbonara", "price": 35 },
+    { "dish_id": 3, "name": "Coca Cola", "price": 5 },
+    { "dish_id": 4, "name": "Agua", "price": 3 },
+    { "dish_id": 5, "name": "Ensalada César", "price": 20 },
+    { "dish_id": 6, "name": "Hamburguesa", "price": 30 },
+    { "dish_id": 7, "name": "Sopa del Día", "price": 15 },
+    { "dish_id": 8, "name": "Té Helado", "price": 4 },
+    { "dish_id": 9, "name": "Brownie", "price": 8 }
+  ],
+  "orders": [
+    {
+      "order_id": 1,
+      "restaurant_id": 1,
+      "table_number": 5,
+      "total": 41,
+      "createdAt": "2025-05-08T12:15:00Z"
+    },
+    {
+      "order_id": 2,
+      "restaurant_id": 1,
+      "table_number": 2,
+      "total": 45,
+      "createdAt": "2025-05-09T03:13:07.096Z"
+    },
+    {
+      "order_id": 3,
+      "restaurant_id": 1,
+      "table_number": 6,
+      "total": 175,
+      "createdAt": "2025-05-09T03:17:46.480Z"
+    },
+    {
+      "order_id": 4,
+      "restaurant_id": 1,
+      "table_number": 2,
+      "total": 3,
+      "createdAt": "2025-05-09T15:23:46.395Z"
+    },
+    {
+      "order_id": 5,
+      "restaurant_id": 1,
+      "table_number": 8,
+      "total": 125,
+      "createdAt": "2025-05-09T16:37:05.015Z"
+    },
+    {
+      "order_id": 6,
+      "restaurant_id": 1,
+      "table_number": 10,
+      "total": 11,
+      "createdAt": "2025-05-09T17:21:49.829Z"
+    },
+    {
+      "order_id": 7,
+      "restaurant_id": 1,
+      "table_number": 10,
+      "total": 60,
+      "createdAt": "2025-05-10T03:31:22.472Z"
+    },
+    {
+      "order_id": 8,
+      "restaurant_id": 1,
+      "table_number": 27,
+      "total": 3,
+      "createdAt": "2025-05-10T03:34:14.512Z"
+    },
+    {
+      "order_id": 9,
+      "restaurant_id": 1,
+      "table_number": 20,
+      "total": 30,
+      "createdAt": "2025-05-13T06:43:33.544Z"
+    }
+  ],
+  "orders_dishes": [
+    { "order_id": 1, "dish_id": 2, "quantity": 1, "subtotal": 35 },
+    { "order_id": 1, "dish_id": 4, "quantity": 2, "subtotal": 6 },
+    { "order_id": 2, "dish_id": 5, "quantity": 2, "subtotal": 40 },
+    { "order_id": 2, "dish_id": 3, "quantity": 1, "subtotal": 5 },
+    { "order_id": 3, "dish_id": 1, "quantity": 7, "subtotal": 175 },
+    { "order_id": 4, "dish_id": 4, "quantity": 1, "subtotal": 3 },
+    { "order_id": 5, "dish_id": 1, "quantity": 5, "subtotal": 125 },
+    { "order_id": 6, "dish_id": 3, "quantity": 1, "subtotal": 5 },
+    { "order_id": 6, "dish_id": 4, "quantity": 2, "subtotal": 6 },
+    { "order_id": 7, "dish_id": 2, "quantity": 1, "subtotal": 35 },
+    { "order_id": 7, "dish_id": 1, "quantity": 1, "subtotal": 25 },
+    { "order_id": 8, "dish_id": 4, "quantity": 1, "subtotal": 3 },
+    { "order_id": 9, "dish_id": 1, "quantity": 1, "subtotal": 25 },
+    { "order_id": 9, "dish_id": 3, "quantity": 1, "subtotal": 5 },
+
+    { "order_id": 10, "dish_id": 6, "quantity": 3, "subtotal": 90 },
+    { "order_id": 11, "dish_id": 7, "quantity": 4, "subtotal": 60 },
+    { "order_id": 12, "dish_id": 8, "quantity": 2, "subtotal": 8 },
+    { "order_id": 13, "dish_id": 9, "quantity": 5, "subtotal": 40 },
+    { "order_id": 14, "dish_id": 1, "quantity": 2, "subtotal": 50 },
+    { "order_id": 15, "dish_id": 6, "quantity": 1, "subtotal": 30 }
+  ],
+  "notifications": [
+    {
+      "id": 1,
+      "title": "Low temperature",
+      "description": "The temperature for steak is below the threshold.",
+      "type": "Inventory",
+      "date": "2025-04-12T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "title": "High humidity",
+      "description": "The humidity for salmons level is above the threshold.",
+      "type": "Inventory",
+      "date": "2025-04-13T02:40:00Z"
+    },
+    {
+      "id":      "Item expires soon",
+      "description": "The expiration date for the milk is in 3 days.",
+      "type": "Inventory",
+      "date": "2025-04-14T20:15:00Z"
+    }
+  ]
+}
