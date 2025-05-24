@@ -1,24 +1,23 @@
 <div class="dashboard-container">
-  <!-- Gráfico de barras: lado superior izquierdo -->
-  <div class="bar-chart">
-    <h1>HI</h1>
-    <app-orders-analytics></app-orders-analytics>
-  </div>
-
-  <!-- Gráfico de pastel: lado superior derecho -->
-  <div class="pie-chart">
-    <p>Gráfica de pie</p>
-    <app-order-pie-analytics></app-order-pie-analytics>
-  </div>
-
-  <!-- Gráfico de área: parte inferior ocupando dos columnas -->
-  <div class="area-chart">
+  <!-- Parte superior -->
+  <div class="profits">
     <p>Profits</p>
     <app-profits-analytics></app-profits-analytics>
   </div>
-</div>
 
+  <div class="losses">
+    <p>Losses</p>
+    <app-loss-analytics></app-loss-analytics>
+  </div>
 
-<div>
-  <app-loss-analytics/>
+  <!-- Parte inferior -->
+  <div class="orders">
+    <p>Orders</p>
+    <app-orders-analytics></app-orders-analytics>
+  </div>
+
+  <div class="pie">
+    <p>Pie Chart</p>
+    <app-order-pie-analytics></app-order-pie-analytics>
+  </div>
 </div>

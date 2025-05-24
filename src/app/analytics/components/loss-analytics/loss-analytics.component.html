@@ -1,0 +1,10 @@
+<!-- Template -->
+<apx-chart *ngIf="chartOptions && chartOptions.chart"
+           [series]="chartSeries"
+           [chart]="chartOptions.chart"
+           [xaxis]="chartOptions.xaxis"
+           [stroke]="chartOptions.stroke"
+           [dataLabels]="chartOptions.dataLabels"
+           [tooltip]="chartOptions.tooltip"
+           [fill]="chartOptions.fill"
+></apx-chart>

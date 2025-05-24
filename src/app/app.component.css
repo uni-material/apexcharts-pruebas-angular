@@ -4,21 +4,25 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   gap: 1rem;
-  height: 100vh;
   padding: 1rem;
 }
 
-.bar-chart {
+.profits {
   grid-column: 1;
   grid-row: 1;
 }
 
-.pie-chart {
+.losses {
   grid-column: 2;
   grid-row: 1;
 }
 
-.area-chart {
-  grid-column: 1 / span 2;
+.orders {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.pie {
+  grid-column: 2;
   grid-row: 2;
 }

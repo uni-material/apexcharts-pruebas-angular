@@ -58,7 +58,8 @@ export class ProfitsAnalyticsComponent implements OnInit{
     this.orderService.getProfitsPerDay().subscribe(data => {
       this.chartOptions.series = [{
         name: 'Ganancia',
-        data: data.map(item => item.profit)
+        data: data.map(item => item.profit),
+        color: '#4cff00',
       }];
       this.chartOptions.xaxis = {
         categories: data.map(item => item.day)
