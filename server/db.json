@@ -151,7 +151,6 @@
     { "order_id": 8, "dish_id": 4, "quantity": 1, "subtotal": 3 },
     { "order_id": 9, "dish_id": 1, "quantity": 1, "subtotal": 25 },
     { "order_id": 9, "dish_id": 3, "quantity": 1, "subtotal": 5 },
-
     { "order_id": 10, "dish_id": 6, "quantity": 3, "subtotal": 90 },
     { "order_id": 11, "dish_id": 7, "quantity": 4, "subtotal": 60 },
     { "order_id": 12, "dish_id": 8, "quantity": 2, "subtotal": 8 },
