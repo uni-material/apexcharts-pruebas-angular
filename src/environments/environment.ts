@@ -4,4 +4,5 @@ export const environment = {
   ordersEndpointPath: '/orders',
   dishesEndpointPath: '/dishes',
   orderDishesEndpointPath: '/orders_dishes',
+  serverBaseUrlProducts: '/products',
 };

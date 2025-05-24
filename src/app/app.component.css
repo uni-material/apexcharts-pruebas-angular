@@ -1,0 +1,24 @@
+
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.bar-chart {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.pie-chart {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.area-chart {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
