@@ -1,0 +1,20 @@
+<div class="orders-grid">
+  <mat-card *ngFor="let ov of orderViews" class="order-card">
+    <mat-card-header>
+      <mat-card-title>Mesa N°{{ ov.order.tableNumber }}</mat-card-title>
+      <mat-card-subtitle>{{ ov.order.createdAt | date: 'short' }}</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <ul>
+        <li *ngFor="let dish of ov.dishes">
+          {{ dish.name }} - x{{ dish.quantity }} = S/ {{ dish.subtotal }}
+        </li>
+      </ul>
+    </mat-card-content>
+
+    <mat-card-footer>
+      <strong>Total: S/ {{ ov.order.total }}</strong>
+    </mat-card-footer>
+  </mat-card>
+</div>

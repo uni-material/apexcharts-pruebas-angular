@@ -16,6 +16,7 @@ export type PieChartOptions = {
   selector: 'app-order-pie-analytics',
   imports: [ChartComponent, NgApexchartsModule, NgIf],
   templateUrl: './order-pie-analytics.component.html',
+  standalone: true,
   styleUrl: './order-pie-analytics.component.css'
 })
 export class OrderPieAnalyticsComponent implements OnInit {

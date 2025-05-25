@@ -11,6 +11,7 @@ import {NgIf} from '@angular/common';
     NgIf
   ],
   templateUrl: './loss-analytics.component.html',
+  standalone: true,
   styleUrls: ['./loss-analytics.component.css']
 })
 export class LossAnalyticsComponent implements OnInit {

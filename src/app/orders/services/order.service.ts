@@ -16,6 +16,7 @@ export class OrderService extends BaseService<Order>{
     this.resourceEndpoint = ordersResourceEndpointPath;
   }
 
+
   getProfitsPerDay(): Observable<{ day: string, profit: number }[]> {
     return this.http.get<Order[]>(`${environment.serverBaseUrl}${ordersResourceEndpointPath}`).pipe(
       map((orders: Order[]) => {
