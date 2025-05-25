@@ -14,7 +14,4 @@ export class Dish {
     this.name = dishData.name || '';
     this.price = dishData.price || 0;
   }
-
-
-
 }

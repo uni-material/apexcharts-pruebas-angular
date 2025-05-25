@@ -6,10 +6,11 @@ import {ProfitsAnalyticsComponent} from './analytics/components/profits-analytic
 import {OrderPieAnalyticsComponent} from './analytics/components/order-pie-analytics/order-pie-analytics.component';
 import {LossAnalyticsComponent} from './analytics/components/loss-analytics/loss-analytics.component';
 import {OrderCardComponent} from './orders/components/order-card/order-card.component';
+import {OrdersComponent} from './orders/pages/orders/orders.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, OrdersAnalyticsComponent, ProfitsAnalyticsComponent, LossAnalyticsComponent, OrderPieAnalyticsComponent, OrderCardComponent],
+  imports: [RouterOutlet, OrdersAnalyticsComponent, ProfitsAnalyticsComponent, LossAnalyticsComponent, OrderPieAnalyticsComponent, OrderCardComponent, OrdersComponent],
   templateUrl: './app.component.html',
   standalone: true,
   styleUrl: './app.component.css'
