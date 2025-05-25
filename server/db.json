@@ -2,372 +2,456 @@
   "restaurants": [
     {
       "restaurant_id": 1,
-      "name": "KeepItFresh Grill",
-      "address": "123 Fresh Ave."
+      "name": "Sabor Peruano",
+      "address": "Av. Inca 123"
     }
   ],
   "inventories": [
     {
       "inventory_id": 1,
       "restaurant_id": 1,
-      "name": "Main Inventory"
+      "name": "Inventario Principal"
     }
   ],
   "products": [
     {
       "product_id": 1,
       "inventory_id": 1,
-      "name": "Cherries",
-      "expiration_date": "2025-06-11T00:00:00Z",
-      "stock": 13,
-      "measurement_unit": "kg",
-      "price": 10.5
-    },
-    {
-      "product_id": 2,
-      "inventory_id": 1,
-      "name": "Tomato",
-      "expiration_date": "2025-05-23T00:00:00Z",
-      "stock": 20,
+      "name": "Papa Amarilla",
+      "expiration_date": "2025-06-20T00:00:00Z",
+      "stock": 30,
       "measurement_unit": "kg",
       "price": 2
     },
     {
-      "product_id": 3,
+      "product_id": 2,
       "inventory_id": 1,
-      "name": "Bananas",
-      "expiration_date": "2025-05-23T00:00:00Z",
-      "stock": 10,
+      "name": "Ají Amarillo",
+      "expiration_date": "2025-07-10T00:00:00Z",
+      "stock": 15,
       "measurement_unit": "kg",
       "price": 3
     },
     {
+      "product_id": 3,
+      "inventory_id": 1,
+      "name": "Pescado Fresco",
+      "expiration_date": "2025-06-05T00:00:00Z",
+      "stock": 20,
+      "measurement_unit": "kg",
+      "price": 15
+    },
+    {
       "product_id": 4,
       "inventory_id": 1,
-      "name": "Lettuce",
-      "expiration_date": "2025-05-29T00:00:00Z",
-      "stock": 15,
-      "measurement_unit": "unit",
-      "price": 1.5
+      "name": "Pollo",
+      "expiration_date": "2025-06-10T00:00:00Z",
+      "stock": 25,
+      "measurement_unit": "kg",
+      "price": 8
     },
     {
       "product_id": 5,
       "inventory_id": 1,
-      "name": "Potato",
-      "expiration_date": "2025-10-23T00:00:00Z",
-      "stock": 10,
+      "name": "Cebolla",
+      "expiration_date": "2025-06-15T00:00:00Z",
+      "stock": 18,
       "measurement_unit": "kg",
-      "price": 2.5
+      "price": 1.5
     }
   ],
   "dishes": [
     {
       "dish_id": 1,
-      "name": "Pizza Margherita",
-      "price": 25
+      "name": "Lomo Saltado",
+      "price": 28
     },
     {
       "dish_id": 2,
-      "name": "Spaghetti Carbonara",
-      "price": 35
+      "name": "Ají de Gallina",
+      "price": 24
     },
     {
       "dish_id": 3,
-      "name": "Coca Cola",
-      "price": 5
-    },
-    {
-      "dish_id": 4,
-      "name": "Agua",
-      "price": 3
-    },
-    {
-      "dish_id": 5,
-      "name": "Ensalada César",
-      "price": 20
-    },
-    {
-      "dish_id": 6,
-      "name": "Hamburguesa",
+      "name": "Ceviche Clásico",
       "price": 30
     },
     {
-      "dish_id": 7,
-      "name": "Sopa del Día",
+      "dish_id": 4,
+      "name": "Papa a la Huancaína",
       "price": 15
     },
     {
+      "dish_id": 5,
+      "name": "Pollo a la Brasa",
+      "price": 32
+    },
+    {
+      "dish_id": 6,
+      "name": "Chicha Morada",
+      "price": 6
+    },
+    {
+      "dish_id": 7,
+      "name": "Inca Kola",
+      "price": 5
+    },
+    {
       "dish_id": 8,
-      "name": "Té Helado",
-      "price": 4
+      "name": "Arroz con Pollo",
+      "price": 22
     },
     {
       "dish_id": 9,
-      "name": "Brownie",
-      "price": 8
+      "name": "Tacu Tacu con Lomo",
+      "price": 35
     }
   ],
   "orders": [
     {
       "id": 1,
       "restaurant_id": 1,
-      "table_number": 5,
-      "total": 41,
-      "createdAt": "2025-05-08T12:15:00Z"
+      "table_number": 1,
+      "total": 58,
+      "createdAt": "2025-05-19T12:15:00Z"
     },
     {
       "id": 2,
       "restaurant_id": 1,
       "table_number": 2,
-      "total": 45,
-      "createdAt": "2025-05-09T03:13:07.096Z"
+      "total": 35,
+      "createdAt": "2025-05-20T13:30:00Z"
     },
     {
       "id": 3,
       "restaurant_id": 1,
-      "table_number": 6,
-      "total": 175,
-      "createdAt": "2025-05-09T03:17:46.480Z"
+      "table_number": 3,
+      "total": 51,
+      "createdAt": "2025-05-21T14:45:00Z"
     },
     {
       "id": 4,
       "restaurant_id": 1,
-      "table_number": 2,
-      "total": 3,
-      "createdAt": "2025-05-09T15:23:46.395Z"
+      "table_number": 4,
+      "total": 37,
+      "createdAt": "2025-05-22T15:00:00Z"
     },
     {
       "id": 5,
       "restaurant_id": 1,
-      "table_number": 8,
-      "total": 125,
-      "createdAt": "2025-05-09T16:37:05.015Z"
+      "table_number": 5,
+      "total": 45,
+      "createdAt": "2025-05-23T16:20:00Z"
     },
     {
       "id": 6,
       "restaurant_id": 1,
-      "table_number": 10,
-      "total": 11,
-      "createdAt": "2025-05-09T17:21:49.829Z"
+      "table_number": 6,
+      "total": 66,
+      "createdAt": "2025-05-24T17:25:00Z"
     },
     {
       "id": 7,
       "restaurant_id": 1,
-      "table_number": 10,
-      "total": 60,
-      "createdAt": "2025-05-10T03:31:22.472Z"
+      "table_number": 7,
+      "total": 50,
+      "createdAt": "2025-05-24T18:40:00Z"
     },
     {
       "id": 8,
       "restaurant_id": 1,
-      "table_number": 27,
-      "total": 3,
-      "createdAt": "2025-05-10T03:34:14.512Z"
+      "table_number": 8,
+      "total": 38,
+      "createdAt": "2025-05-25T12:30:00Z"
     },
     {
       "id": 9,
       "restaurant_id": 1,
-      "table_number": 20,
-      "total": 30,
-      "createdAt": "2025-05-13T06:43:33.544Z"
-    },
-    {
-      "restaurant_id": 1,
       "table_number": 9,
-      "total": 35,
-      "createdAt": "2025-05-25T19:55:38.121Z",
-      "id": 10
+      "total": 65,
+      "createdAt": "2025-05-25T14:00:00Z"
+    },
+    {
+      "id": 10,
+      "restaurant_id": 1,
+      "table_number": 10,
+      "total": 33,
+      "createdAt": "2025-05-25T16:00:00Z"
     },
     {
       "restaurant_id": 1,
-      "table_number": 28,
-      "total": 3,
-      "createdAt": "2025-05-25T22:29:49.574Z",
+      "table_number": 11,
+      "total": 46,
+      "createdAt": "2025-05-25T23:07:53.655Z",
       "id": 11
     },
     {
       "restaurant_id": 1,
-      "table_number": 13,
-      "total": 35,
-      "createdAt": "2025-05-25T22:42:22.918Z",
+      "table_number": 12,
+      "total": 6,
+      "createdAt": "2025-05-25T23:08:20.334Z",
       "id": 12
     },
     {
       "restaurant_id": 1,
-      "table_number": 1,
-      "total": 8,
-      "createdAt": "2025-05-25T22:43:33.246Z",
+      "table_number": 41,
+      "total": 40,
+      "createdAt": "2025-05-25T23:13:00.159Z",
       "id": 13
     },
     {
       "restaurant_id": 1,
-      "table_number": 1,
-      "total": 20,
-      "createdAt": "2025-05-25T22:44:12.478Z",
+      "table_number": 43,
+      "total": 0,
+      "createdAt": "2025-05-25T23:19:14.327Z",
       "id": 14
+    },
+    {
+      "restaurant_id": 1,
+      "table_number": 44,
+      "total": 47,
+      "createdAt": "2025-05-25T23:21:33.024Z",
+      "id": 15
+    },
+    {
+      "restaurant_id": 1,
+      "table_number": 50,
+      "total": 28,
+      "createdAt": "2025-05-25T23:27:27.176Z",
+      "id": 16
     }
   ],
   "orders_dishes": [
     {
       "id": 1,
       "order_id": 1,
-      "dish_id": 2,
-      "quantity": 1,
-      "subtotal": 35
+      "dish_id": 1,
+      "quantity": 2,
+      "subtotal": 56
     },
     {
       "id": 2,
       "order_id": 1,
-      "dish_id": 4,
-      "quantity": 2,
-      "subtotal": 6
+      "dish_id": 7,
+      "quantity": 1,
+      "subtotal": 5
     },
     {
       "id": 3,
       "order_id": 2,
-      "dish_id": 5,
-      "quantity": 2,
-      "subtotal": 40
+      "dish_id": 3,
+      "quantity": 1,
+      "subtotal": 30
     },
     {
       "id": 4,
       "order_id": 2,
-      "dish_id": 3,
+      "dish_id": 7,
       "quantity": 1,
       "subtotal": 5
     },
     {
       "id": 5,
       "order_id": 3,
-      "dish_id": 1,
-      "quantity": 7,
-      "subtotal": 175
-    },
-    {
-      "id": 6,
-      "order_id": 4,
-      "dish_id": 4,
-      "quantity": 1,
-      "subtotal": 3
-    },
-    {
-      "id": 7,
-      "order_id": 5,
-      "dish_id": 1,
-      "quantity": 5,
-      "subtotal": 125
-    },
-    {
-      "id": 8,
-      "order_id": 6,
-      "dish_id": 3,
-      "quantity": 1,
-      "subtotal": 5
-    },
-    {
-      "id": 9,
-      "order_id": 6,
-      "dish_id": 4,
-      "quantity": 2,
-      "subtotal": 6
-    },
-    {
-      "id": 10,
-      "order_id": 7,
-      "dish_id": 2,
+      "dish_id": 9,
       "quantity": 1,
       "subtotal": 35
     },
     {
-      "id": 11,
-      "order_id": 7,
-      "dish_id": 1,
-      "quantity": 1,
-      "subtotal": 25
+      "id": 6,
+      "order_id": 3,
+      "dish_id": 6,
+      "quantity": 2,
+      "subtotal": 12
     },
     {
-      "id": 12,
-      "order_id": 8,
+      "id": 7,
+      "order_id": 4,
+      "dish_id": 2,
+      "quantity": 1,
+      "subtotal": 24
+    },
+    {
+      "id": 8,
+      "order_id": 4,
       "dish_id": 4,
       "quantity": 1,
-      "subtotal": 3
+      "subtotal": 15
     },
     {
-      "id": 13,
-      "order_id": 9,
-      "dish_id": 1,
+      "id": 9,
+      "order_id": 5,
+      "dish_id": 5,
       "quantity": 1,
-      "subtotal": 25
+      "subtotal": 32
     },
     {
-      "id": 14,
-      "order_id": 9,
-      "dish_id": 3,
+      "id": 10,
+      "order_id": 5,
+      "dish_id": 6,
+      "quantity": 1,
+      "subtotal": 6
+    },
+    {
+      "id": 11,
+      "order_id": 5,
+      "dish_id": 7,
       "quantity": 1,
       "subtotal": 5
     },
     {
-      "id": 15,
-      "order_id": 10,
-      "dish_id": 6,
-      "quantity": 3,
-      "subtotal": 90
-    },
-    {
-      "id": 16,
-      "order_id": 11,
-      "dish_id": 7,
-      "quantity": 4,
-      "subtotal": 60
-    },
-    {
-      "id": 17,
-      "order_id": 12,
-      "dish_id": 8,
-      "quantity": 2,
-      "subtotal": 8
-    },
-    {
-      "id": 18,
-      "order_id": 13,
+      "id": 12,
+      "order_id": 6,
       "dish_id": 9,
-      "quantity": 5,
-      "subtotal": 40
+      "quantity": 1,
+      "subtotal": 35
     },
     {
-      "id": 19,
-      "order_id": 14,
-      "dish_id": 1,
-      "quantity": 2,
-      "subtotal": 50
-    },
-    {
-      "id": 20,
-      "order_id": 15,
-      "dish_id": 6,
+      "id": 13,
+      "order_id": 6,
+      "dish_id": 3,
       "quantity": 1,
       "subtotal": 30
     },
     {
-      "order_id": 12,
+      "id": 14,
+      "order_id": 7,
+      "dish_id": 8,
+      "quantity": 2,
+      "subtotal": 44
+    },
+    {
+      "id": 15,
+      "order_id": 7,
+      "dish_id": 6,
+      "quantity": 1,
+      "subtotal": 6
+    },
+    {
+      "id": 16,
+      "order_id": 8,
+      "dish_id": 4,
+      "quantity": 2,
+      "subtotal": 30
+    },
+    {
+      "id": 17,
+      "order_id": 8,
+      "dish_id": 7,
+      "quantity": 1,
+      "subtotal": 5
+    },
+    {
+      "id": 18,
+      "order_id": 8,
+      "dish_id": 6,
+      "quantity": 1,
+      "subtotal": 6
+    },
+    {
+      "id": 19,
+      "order_id": 9,
+      "dish_id": 1,
+      "quantity": 1,
+      "subtotal": 28
+    },
+    {
+      "id": 20,
+      "order_id": 9,
+      "dish_id": 5,
+      "quantity": 1,
+      "subtotal": 32
+    },
+    {
+      "id": 21,
+      "order_id": 9,
+      "dish_id": 6,
+      "quantity": 1,
+      "subtotal": 6
+    },
+    {
+      "id": 22,
+      "order_id": 10,
       "dish_id": 2,
       "quantity": 1,
-      "subtotal": 35,
-      "id": 21
+      "subtotal": 24
+    },
+    {
+      "id": 23,
+      "order_id": 10,
+      "dish_id": 6,
+      "quantity": 1,
+      "subtotal": 6
+    },
+    {
+      "id": 24,
+      "order_id": 10,
+      "dish_id": 7,
+      "quantity": 1,
+      "subtotal": 5
+    },
+    {
+      "order_id": 11,
+      "dish_id": 2,
+      "quantity": 1,
+      "subtotal": 24,
+      "id": 25
+    },
+    {
+      "order_id": 11,
+      "dish_id": 8,
+      "quantity": 1,
+      "subtotal": 22,
+      "id": 26
+    },
+    {
+      "order_id": 12,
+      "dish_id": 6,
+      "quantity": 1,
+      "subtotal": 6,
+      "id": 27
     },
     {
       "order_id": 13,
-      "dish_id": 8,
-      "quantity": 2,
-      "subtotal": 8,
-      "id": 22
+      "dish_id": 3,
+      "quantity": 1,
+      "subtotal": 30,
+      "id": 28
     },
     {
-      "order_id": 14,
+      "order_id": 13,
+      "dish_id": 7,
+      "quantity": 2,
+      "subtotal": 10,
+      "id": 29
+    },
+    {
+      "order_id": 15,
+      "dish_id": 4,
+      "quantity": 1,
+      "subtotal": 15,
+      "id": 30
+    },
+    {
+      "order_id": 15,
       "dish_id": 5,
       "quantity": 1,
-      "subtotal": 20,
-      "id": 23
+      "subtotal": 32,
+      "id": 31
+    },
+    {
+      "order_id": 16,
+      "dish_id": 8,
+      "quantity": 1,
+      "subtotal": 22,
+      "id": 32
+    },
+    {
+      "order_id": 16,
+      "dish_id": 6,
+      "quantity": 1,
+      "subtotal": 6,
+      "id": 33
     }
   ],
   "notifications": [

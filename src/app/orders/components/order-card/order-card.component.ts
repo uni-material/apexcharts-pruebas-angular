@@ -80,13 +80,12 @@ export class OrderCardComponent implements OnInit{
 
   buildOrderViews(): void {
     this.orderViews = this.orders.map(order => {
-      // Filtrar los platos correspondientes a la orden actual
-      // order.id es el ID de la orden actual (ej: 1, 2, 3...)
-      // od.order_id es la clave foránea en orders_dishes que referencia a orders.id
+      // Buscar los platos correspondientes a esta orden
       const relatedOrderDishes = this.orderDishes.filter(od => od.order_id === order.id);
 
+      // Obtener la info de cada plato
       const dishesInfo = relatedOrderDishes.map(rod => {
-        const dish = this.dishes.find(d => d.id === rod.dish_id); // d.id es el dish_id mapeado
+        const dish = this.dishes.find(d => d.id === rod.dish_id);
         return {
           name: dish ? dish.name : 'Plato Desconocido',
           quantity: rod.quantity,
@@ -94,11 +93,21 @@ export class OrderCardComponent implements OnInit{
         };
       });
 
-      return { order, dishes: dishesInfo };
+      // Calcular el total real desde los subtotales
+      const calculatedTotal = dishesInfo.reduce((sum, item) => sum + item.subtotal, 0);
+
+      // Sobrescribimos el total del objeto 'order' con el calculado
+      return {
+        order: {
+          ...order,
+          total: calculatedTotal
+        },
+        dishes: dishesInfo
+      };
     })
-      // Ordenar las vistas de órdenes por fecha de creación, las más recientes primero
       .sort((a, b) => b.order.createdAt.getTime() - a.order.createdAt.getTime());
   }
+
 
 
 }

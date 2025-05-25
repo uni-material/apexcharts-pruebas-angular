@@ -149,9 +149,10 @@ export class OrderFormComponent implements OnInit{
         // Esperar a que todos los 'order_dishes' se creen
         Promise.all(orderDishesPromises).then(() => {
           console.log('Orden y todos los platos de la orden creados exitosamente.');
-          this.form.reset();
-          this.items.clear();
-          this.addDish(); // Añadir una fila vacía para la siguiente orden
+          this.form.setControl('items', this.fb.array([]));
+          this.form.get('tableNumber')?.reset();
+          this.addDish(); // Añadir una nueva fila vacía
+          // Añadir una fila vacía para la siguiente orden
           this.orderCreated.emit(); // Emitir evento para notificar al componente padre
         }).catch(error => {
           console.error('Error al crear uno o más OrderDish:', error);

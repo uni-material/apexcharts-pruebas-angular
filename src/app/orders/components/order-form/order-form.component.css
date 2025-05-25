@@ -1,0 +1,72 @@
+/* Contenedor general del formulario */
+.order-form {
+  background-color: #e4f9e4; /* verde pastel */
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 700px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Título centrado */
+.order-form h2 {
+  text-align: center;
+  color: #2f5936;
+  margin-bottom: 2rem; /* aumentamos el espacio debajo del título */
+}
+
+
+/* Etiquetas de los campos en blanco */
+::ng-deep .mat-form-field-label {
+  color: white !important;
+}
+
+/* Fondo para los mat-form-field */
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: #c2eac2; /* verde muy claro */
+  border-radius: 6px;
+}
+
+/* Input y select con borde suave */
+::ng-deep input.mat-input-element,
+::ng-deep .mat-select-value {
+  color: #1b361b;
+  font-weight: bold;
+}
+
+/* Espaciado entre filas */
+.item-row {
+  margin-bottom: 1rem;
+  border: 1px solid #cceccc;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+/* Botón agregar */
+.add-btn {
+  background-color: #5aaa5a !important; /* verde más oscuro */
+  color: white !important;
+  margin-top: 1rem;
+}
+
+/* Botón guardar */
+.submit-btn {
+  background-color: #469a46 !important; /* verde intenso */
+  color: white !important;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+/* Botón eliminar */
+.remove-btn {
+  background-color: #ff6666 !important;
+  color: white !important;
+  align-self: flex-start;
+  margin-top: 0.5rem;
+}
+
+/* Estilo general del texto en el formulario */
+.order-form, .order-form * {
+  font-family: 'Segoe UI', sans-serif;
+}
