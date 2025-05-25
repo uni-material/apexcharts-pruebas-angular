@@ -1,6 +1,7 @@
 import {Component, EventEmitter, Input, OnInit, Output, ViewChild} from '@angular/core';
 import {OrderCardComponent} from '../../components/order-card/order-card.component';
 import {CommonModule} from '@angular/common';
+import {OrderFormComponent} from '../../components/order-form/order-form.component';
 
 
 @Component({
@@ -8,6 +9,7 @@ import {CommonModule} from '@angular/common';
   imports: [
     CommonModule,
     OrderCardComponent,
+    OrderFormComponent,
 
 
   ],
@@ -17,4 +19,11 @@ import {CommonModule} from '@angular/common';
 })
 export class OrdersComponent {
 
+  @ViewChild('orderCard') orderCardComponent!: OrderCardComponent;
+
+  onNewOrder() {
+    if (this.orderCardComponent) {
+      this.orderCardComponent.loadData();
+    }
+  }
 }

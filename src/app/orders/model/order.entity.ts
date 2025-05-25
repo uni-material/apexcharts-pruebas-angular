@@ -1,6 +1,6 @@
 export class Order{
 
-  id: number;
+  id?: number;
   restaurantId: number;
   tableNumber: number;
   total: number;
