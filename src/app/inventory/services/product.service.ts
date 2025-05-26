@@ -15,7 +15,7 @@ export class ProductService {
     return this.http.get<Product[]>(environment.serverBaseUrlProducts);
   }
 
-  addProduct(product: Product): Observable<Product> {
+  addProduct(product: Omit<Product, 'id'>): Observable<Product> {
     return this.http.post<Product>(environment.serverBaseUrlProducts, product);
   }
 

@@ -15,49 +15,49 @@
   ],
   "products": [
     {
-      "product_id": 1,
+      "id": 1,
       "inventory_id": 1,
-      "name": "Papa Amarilla",
-      "expiration_date": "2025-06-20T00:00:00Z",
-      "stock": 30,
-      "measurement_unit": "kg",
-      "price": 2
-    },
-    {
-      "product_id": 2,
-      "inventory_id": 1,
-      "name": "Ají Amarillo",
-      "expiration_date": "2025-07-10T00:00:00Z",
-      "stock": 15,
-      "measurement_unit": "kg",
-      "price": 3
-    },
-    {
-      "product_id": 3,
-      "inventory_id": 1,
-      "name": "Pescado Fresco",
-      "expiration_date": "2025-06-05T00:00:00Z",
+      "name": "Leche",
+      "expiration_date": "2025-06-30T00:00:00Z",
       "stock": 20,
-      "measurement_unit": "kg",
-      "price": 15
-    },
-    {
-      "product_id": 4,
-      "inventory_id": 1,
-      "name": "Pollo",
-      "expiration_date": "2025-06-10T00:00:00Z",
-      "stock": 25,
-      "measurement_unit": "kg",
-      "price": 8
-    },
-    {
-      "product_id": 5,
-      "inventory_id": 1,
-      "name": "Cebolla",
-      "expiration_date": "2025-06-15T00:00:00Z",
-      "stock": 18,
-      "measurement_unit": "kg",
+      "measurement_unit": "litros",
       "price": 1.5
+    },
+    {
+      "id": 2,
+      "inventory_id": 1,
+      "name": "Pan",
+      "expiration_date": "2025-05-28T00:00:00Z",
+      "stock": 50,
+      "measurement_unit": "unidad",
+      "price": 0.8
+    },
+    {
+      "id": 3,
+      "inventory_id": 1,
+      "name": "Huevos",
+      "expiration_date": "2025-06-15T00:00:00Z",
+      "stock": 30,
+      "measurement_unit": "docena",
+      "price": 2.2
+    },
+    {
+      "inventory_id": 1,
+      "name": "Platano",
+      "expiration_date": "2025-05-30",
+      "stock": 1,
+      "measurement_unit": "Kg",
+      "price": 3,
+      "id": 4
+    },
+    {
+      "inventory_id": 1,
+      "name": "Camote",
+      "expiration_date": "2025-06-04",
+      "stock": 1,
+      "measurement_unit": "Kg",
+      "price": 3,
+      "id": 5
     }
   ],
   "dishes": [

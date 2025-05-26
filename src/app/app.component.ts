@@ -8,10 +8,11 @@ import {LossAnalyticsComponent} from './analytics/components/loss-analytics/loss
 import {OrderCardComponent} from './orders/components/order-card/order-card.component';
 import {OrdersComponent} from './orders/pages/orders/orders.component';
 import {OrderFormComponent} from './orders/components/order-form/order-form.component';
+import {InventoryTableComponent} from './inventory/componentes/inventory-table/inventory-table.component';
 
 @Component({
   selector: 'app-root',
-  imports: [OrdersAnalyticsComponent, ProfitsAnalyticsComponent, LossAnalyticsComponent, OrderPieAnalyticsComponent, OrderCardComponent, OrdersComponent, OrderFormComponent],
+  imports: [OrdersAnalyticsComponent, ProfitsAnalyticsComponent, LossAnalyticsComponent, OrderPieAnalyticsComponent, OrderCardComponent, OrdersComponent, OrderFormComponent, InventoryTableComponent],
   templateUrl: './app.component.html',
   standalone: true,
   styleUrl: './app.component.css'
